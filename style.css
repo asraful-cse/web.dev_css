@@ -1,0 +1,135 @@
+:root {
+    --primary-color: yellow;
+    --linear-bg: linear-gradient(
+        45deg,
+        rgb(197, 156, 22) 10%,
+        crimson,
+        rgb(48, 199, 166) 50%,
+        rgb(68, 39, 197),
+        rgb(206, 255, 196)
+    );
+    --background-image: linear-gradient(to right red yellow green orange);
+    --circle-gradient: radial-gradient(circle yellow orange red);
+}
+
+#fun {
+    background: var(--linear-bg);
+    height: 200px;
+    width: calc(100% - 200px);
+    /* width: 90%; */
+    /* width: 1000px; */
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    background: var(--linear-bg);
+    clip-path: circle(50%);
+}
+
+.polygon {
+    height: 200px;
+    width: 200px;
+    /* background-color: cornflowerblue; */
+
+    background: var(--linear-bg);
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 75%,
+        75% 75%,
+        75% 100%,
+        50% 75%,
+        0% 75%
+    );
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-container {
+    background: gray;
+    padding: 25px;
+    width: 500px;
+    height: 300px;
+}
+.skill-container li {
+    list-style-type: none;
+    margin: 50px 0px;
+    font-weight: 700;
+    position: relative;
+}
+.skill-container li::before {
+    content: "";
+    position: absolute;
+    background: lightblue;
+    width: 100%;
+    height: 25px;
+    left: 0;
+    border-radius: 1000px;
+    top: calc(100% + 5px);
+}
+.skill-container li::after {
+    content: "";
+    position: absolute;
+    background: rgb(13, 58, 73);
+    width: 0%;
+    height: 25px;
+    left: 0;
+    border-radius: 1000px;
+    top: calc(100% + 5px);
+
+    animation-duration: 3s;
+    /* animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); */
+    animation-delay: 2s;
+    /* animation-iteration-count: 3; */
+    /* animation-direction: forward; */
+    animation-fill-mode: forwards;
+}
+
+.skill-container li.html::after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 98%;
+        background-color: rgb(38, 149, 163);
+    }
+}
+
+.skill-container li.css::after {
+    animation-name: css;
+    /* for animation-------- */
+}
+
+@keyframes css {
+    to {
+        width: 90%;
+        background-color: orange;
+    }
+}
+.skill-container li.javascript::after {
+    animation-name: javascript;
+    /* for animation-------- */
+}
+
+@keyframes javascript {
+    to {
+        width: 70%;
+        background-color: rgb(30, 255, 0);
+    }
+}
+.skill-container li.react::after {
+    animation-name: react;
+    /* for animation-------- */
+}
+
+@keyframes react {
+    to {
+        width: 80%;
+        background-color: rgb(238, 68, 224);
+    }
+}
