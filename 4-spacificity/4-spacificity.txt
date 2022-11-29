@@ -1,0 +1,65 @@
+How is specificity calculated?
+Specificity is an algorithm that calculates the weight that is applied to a given CSS declaration.
+The weight is determined by the number of selectors of each weight category in the selector matching the element (or pseudo-element).
+If there are two or more declarations providing different property values for the same element, 
+the declaration value in the style block having the matching selector with the greatest algorithmic weight gets applied.
+
+The specificity algorithm is basically a three-column value of three categories or weights - ID, CLASS, and TYPE - corresponding to the three types of selectors. 
+The value represents the count of selector components in each weight category and is written as ID - CLASS - TYPE. 
+The three columns are created by counting the number of selector components for each selector weight category in the selectors that match the element.
+
+
+Specificity Hierarchy------------------------------------------------------
+Every CSS selector has its place in the specificity hierarchy.
+
+There are four categories which define the specificity level of a selector:
+
+1.Inline styles - Example: <h1 style="color: pink;">
+2.IDs - Example: #navbar
+3.Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+4.Elements and pseudo-elements - Example: h1, ::before ::after ::etc
+
+
+SPACIFICITY CALCULATOR:--------------------
+1.a= number of id,
+2.b=number of class,pseduo classes, attributes,
+3.c=number of elelments, pesudo elements.
+
+
+a= 0 b=0 c=1 ===001
+
+h1{
+    background-color:brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Class, pseudo-class, or attribute selector #
+A class, pseudo-class or attribute selector gets 10 points of specificity.
+
+1.Class selector #--------------
+
+.my-class {
+  color: red;
+}
+2.Pseudo-class selector #-----------------
+
+:hover {
+  color: red;
+}
+3.Attribute selector #------------------------------
+
+[href='#'] {
+  color: red;
+}

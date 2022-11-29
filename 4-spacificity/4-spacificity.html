@@ -7,9 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4-Spacificity</title>
 </head>
+<style>
+    h1 {
+        /* a=0, b=0, c=1    === 001*/
+        background-color: yellow;
+    }
+
+  
+    .test {
+        /* a=0, b=1, c=0    === 010*/
+        background-color: red;
+    }
+
+    #test_id {
+         /* a=1, b=0, c=0    === 100*/
+        background-color: green;
+    }
+
+</style>
 
 <body>
-
+    <h1 id="test_id" class="test">SPACIFICITY CALCULATOR :--------------------
+        <br>1.A=number of id (#id_name) -----hight power
+        <br>2.B=number of class,pseduo classes(.class_name, :hover, etc), attributes, ----Madiam power
+        <br>3.C=number of elelments, pesudo elements. (h1--h6,p,span,strong ::after, ::before etc) --- low power
+    </h1>
 </body>
 
 </html>
