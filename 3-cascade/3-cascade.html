@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-cascade</title>
+</head>
+<style>
+    h1 {
+        color: aquamarine
+    }
+
+    .cascade {
+        color: blue
+    }
+
+
+    /* User-agent CSS: */
+
+    li {
+        margin-left: 10px;
+    }
+
+    /* Copy to Clipboard
+Author CSS 1: */
+
+    li {
+        margin-left: 0;
+
+    }
+
+    /* This is a reset */
+
+    @media screen {
+        li {
+            margin-left: 3px;
+
+        }
+    }
+
+    @media print {
+        li {
+            margin-left: 1px;
+        }
+    }
+
+    @layer namedLayer {
+        li {
+            margin-left: 5px;
+
+        }
+    }
+
+    /* Copy to Clipboard
+User CSS: */
+
+    .specific {
+        margin-left: 1em;
+        /* apply------------success */
+    }
+</style>
+
+<body>
+    <h1 class="cascade">
+        Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this.
+        The cascade algorithm is split into 4 distinct stages.
+        <br>
+        1.Position and order of appearance:- the order of which your CSS rules appear
+        <br>
+        2.Specificity:- an algorithm which determines which CSS selector has the strongest match
+        <br>
+        3.Origin:- the order of when CSS appears and where it comes from, whether that is a browser style, CSS from a
+        browser extension, or your authored CSS
+        <br>
+        4.Importance:- some CSS rules are weighted more heavily than others, especially with the !important rule type
+    </h1>
+
+    <ul>
+        <li class="specific">1<sup>st</sup></li>
+        <li>2<sup>nd</sup></li>
+    </ul>
+</body>
+
+</html>
