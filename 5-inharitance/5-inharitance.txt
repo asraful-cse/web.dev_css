@@ -1,0 +1,45 @@
+----------------How inheritance works -------------------------
+Every HTML element has every CSS property defined by default with an initial value.
+An initial value is a property that's not inherited and shows up as a
+default if the cascade fails to calculate a value for that element.
+
+
+In CSS, inheritance controls what happens when no value is specified for a property on an element.
+
+CSS properties can be categorized in two types:
+
+inherited properties, which by default are set to the computed value of the parent element
+non-inherited properties, which by default are set to initial value of the property
+Refer to any CSS property definition to see whether a specific property inherits by default ("Inherited: yes") or not ("Inherited: no").
+
+===========================================================================
+<style>
+body{
+    color:aqua
+}
+.container1{
+color: blueviolet;
+}
+.container2{
+color: green;
+}
+#anc a{
+    color: lightskyblue;
+    text-decoration: none;
+}
+</style>
+<body>
+    <h1>Main body color-</h1>
+    <div class="container1">
+        <h2>inside my container one</h2>
+        <p>Paragraph inside my container one !!</p>
+    </div>
+    <div class="container2">
+        <h2>inside my container two</h2>
+        <p>Paragraph inside my container two !!</p>
+    </div>
+    <a href="#">"<"a">" Browser default color </a> <br>
+  <div id="anc">
+    <a href="#">"<"a">" Browser default color change by inheritance </a>
+  </div>
+  ====================================================================================

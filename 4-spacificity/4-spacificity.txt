@@ -24,7 +24,7 @@ SPACIFICITY CALCULATOR:--------------------
 1.a= number of id,
 2.b=number of class,pseduo classes, attributes,
 3.c=number of elelments, pesudo elements.
-
+4. <p style="color: pink;" />	1000	1000
 
 a= 0 b=0 c=1 ===001
 
