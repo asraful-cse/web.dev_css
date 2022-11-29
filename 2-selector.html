@@ -40,7 +40,7 @@ We can divide CSS selectors into five categories:
           }
   -->
 
-  <!-- 
+<!-- 
 The CSS id Selector
 The id selector uses the id attribute of an HTML element to select a specific element.
 
@@ -48,7 +48,7 @@ The id of an element is unique within a page, so the id selector is used to sele
 
 To select an element with a specific id, write a hash (#) character, followed by the id of the element.
 
-Example
+Example:------------
 The CSS rule below will be applied to the HTML element with id="para1": 
 
 #para1 {
@@ -56,3 +56,39 @@ The CSS rule below will be applied to the HTML element with id="para1":
   color: red;
 }
    -->
+
+<!-- 
+The CSS class Selector
+Example:------------
+In this example all HTML elements with class="center" will be red and center-aligned: 
+
+.center {
+  text-align: center;
+  color: red;
+}
+    -->
+
+<!-- 
+
+The CSS Universal Selector
+The universal selector (*) selects all HTML elements on the page.
+Every element on the page will be affected by the style.
+Examole:-------------------
+* {
+  text-align: center;
+  color: blue;
+}
+     -->
+
+<!-- 
+The CSS Grouping Selector
+Example:------------------------
+<h1>Hello World!</h1>
+<h2>Smaller heading!</h2>
+<p>This is a paragraph.</p>
+
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+      -->
