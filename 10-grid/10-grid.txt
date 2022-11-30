@@ -1,0 +1,9 @@
+GRID:----------------------------------------------
+A grid can be defined with row and column.......
+
+1.A grid can be defined with rows and columns. You can choose how to size these row and column tracks or they can react to the size of the content.
+2.Direct children of the grid container will be automatically placed onto this grid.
+3.Or, you can place the items in the precise location that you want.
+4.Lines and areas on the grid can be named to make placement easier.
+5.Spare space in the grid container can be distributed between the tracks.
+6.Grid items can be aligned within their area.
