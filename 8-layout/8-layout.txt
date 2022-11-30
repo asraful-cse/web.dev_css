@@ -1,0 +1,27 @@
+There are two main layout mechanisms that create layout rules for multiple elements, flexbox and grid.
+
+FLEX------------------------------------------
+.my-element {
+	display: flex;
+}
+Flexbox is a layout mechanism for one-dimensional layouts.
+Layout across a single axis, either horizontally or vertically.
+By default, flexbox will align the element's children next to each other, in the inline direction,
+and stretch them in the block direction, so they're all the same height.
+
+GRID---------------------------------
+
+.my-element {
+	display: grid;
+}
+Grid is similar in a lot of ways to flexbox,
+ but it is designed to control multi-axis layouts instead of single-axis layouts (vertical or horizontal space).
+
+Grid enables you to write layout rules on an element
+ that has display: grid, and introduces a few new primitives for layout styling, such as the repeat() and minmax() functions. One useful grid unit is the fr unit—which is a fraction of remaining space—you can build traditional 12 column grids, with a gap between each item, with 3 CSS properties:
+
+ .my-element {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
