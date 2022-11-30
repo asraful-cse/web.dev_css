@@ -8,4 +8,4 @@ example :
       mix-blend-mode: lighten;
     }
 
-    Blend modes properties: Normal, multiple , overly, color burn, handle light, etc
+    Blend modes properties:  Normal, multiple , overly, color burn, handle light, etc
