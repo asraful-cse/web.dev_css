@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>22-filters</title>
+  </head>
+  <body>
+    <p>Button click to change filter mode on</p>
+    <button onclick="myFunction()">click to change </button><br /><br />
+
+    <img
+      id="myImg"
+      src="https://img.redbull.com/images/c_crop,x_1914,y_0,h_3333,w_2000/c_fill,w_400,h_660/q_auto:low,f_auto/redbullcom/2021/2/5/xuyfzibqvdsmukwbkqxj/neymar-jr"
+      alt="Pineapple"
+      width="300"
+      height="300"
+    />
+
+    <script>
+      function myFunction() {
+        document.getElementById("myImg").style.filter = "grayscale(100%)";
+      }
+    </script>
+  </body>
+  >
+</html>

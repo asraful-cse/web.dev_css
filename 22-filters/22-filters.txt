@@ -1,0 +1,7 @@
+Filter------------
+
+We can apply one or many of the following filters as value for filter .
+
+there are five filter use :-
+
+blur(), contrast(), grayscal(),hue-rotate(), drop-shadow()
