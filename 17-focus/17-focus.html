@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>17-focus</title>
+  </head>
+  <style>
+    .red-input:focus {
+      background: yellow;
+      color: red;
+    }
+
+    label {
+      display: block;
+      margin-top: 1em;
+    }
+
+    input:focus {
+      background-color: lightblue;
+    }
+
+    select:focus {
+      background-color: ivory;
+    }
+  </style>
+  <body>
+    <div><input class="red-input" value="I'll be red when focused." /></div>
+    <br />
+    <br />
+    <br />
+    <form>
+
+      <label>Full Name: <input name="firstName" type="text" /></label>
+      <label
+        >Flavor:
+        <select name="flavor">
+          <option>Cherry</option>
+          <option>Green Tea</option>
+          <option>Moose Tracks</option>
+          <option>Mint Chip</option>
+        </select>
+      </label>
+    </form>
+  </body>
+</html>

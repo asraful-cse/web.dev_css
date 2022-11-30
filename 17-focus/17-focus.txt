@@ -1,0 +1,10 @@
+Focus --------------------------
+Focus style assits people who use a device search as a keyboard or a switch control to navigate and interactive with website.
+focusable elements:------- <a>, <button>, <select> ,<input> 
+example:-------------------
+
+ tag
+
+a:focus {
+  outline: 2px solid slateblue;
+}
