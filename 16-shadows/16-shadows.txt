@@ -1,0 +1,4 @@
+CSS Shadow Effects----------------
+There are two shadows:-
+1.text-shadow
+2.box-shadow
