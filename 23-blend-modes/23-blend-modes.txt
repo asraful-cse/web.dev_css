@@ -1,0 +1,11 @@
+Blend mode-------------------
+
+Blend modes are commonly used in design tools such as Photoshop to create a compositional effect by mixing colors from two or more layers.
+
+example :
+
+ img{
+      mix-blend-mode: lighten;
+    }
+
+    Blend modes properties: Normal, multiple , overly, color burn, handle light, etc
