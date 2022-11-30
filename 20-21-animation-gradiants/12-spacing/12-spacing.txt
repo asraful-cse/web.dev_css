@@ -1,0 +1,10 @@
+Spacing-------------------------------------------
+
+
+If we want to add space to the outside of an element . we can use the "margin", property , left, right, top.
+
+Flexbox and auto margins:---------
+we can use value of auto for margin.
+
+Padding :------------------------------------------
+Instead of creating space on the outside of our box , like "margin" does the "padding", inside space.
